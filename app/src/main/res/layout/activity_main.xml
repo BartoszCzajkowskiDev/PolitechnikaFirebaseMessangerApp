@@ -18,9 +18,9 @@
         android:layout_marginTop="32dp"
         android:background="@android:color/white"
         android:ems="10"
-        android:hint="Username"
-        android:paddingLeft="16dp"
+        android:hint="Użytkownik"
         android:inputType="textPersonName"
+        android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,8 +33,8 @@
         android:background="@android:color/white"
         android:ems="10"
         android:hint="Email"
-        android:paddingLeft="16dp"
         android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="@+id/username_edittext_register"
         app:layout_constraintStart_toStartOf="@+id/username_edittext_register"
         app:layout_constraintTop_toBottomOf="@+id/username_edittext_register" />
@@ -46,10 +46,37 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/white"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Hasło"
         android:inputType="textPassword"
         android:paddingLeft="16dp"
         app:layout_constraintEnd_toEndOf="@+id/email_edittext_register"
         app:layout_constraintStart_toStartOf="@+id/email_edittext_register"
         app:layout_constraintTop_toBottomOf="@+id/email_edittext_register" />
+
+    <Button
+        android:id="@+id/register_button_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ZAREJESTRUJ SIĘ"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_register"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_register" />
+
+    <TextView
+        android:id="@+id/already_have_account_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Już posiadam konto"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/register_button_register"
+        app:layout_constraintStart_toStartOf="@+id/register_button_register"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_register" />
 </android.support.constraint.ConstraintLayout>
